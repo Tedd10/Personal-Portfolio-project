@@ -34,3 +34,8 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
