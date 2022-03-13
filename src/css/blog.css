@@ -58,40 +58,38 @@ nav a {
   color: black;
 }
 
-/* description styles */
+/* blog styles */
 
-.description {
-  margin-bottom: 10em;
+.projects {
+  margin-bottom: 4em;
 }
 
-.description h1 {
-  font-size: 3em;
-  
+.projects h1 {
+  font-size: 2.3em;
+  margin-bottom: 2em;
 }
 
-/* Blog styles */
-
-.blog {
-  margin-bottom: 10em;
+.projects img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3em;
 }
 
-.blog h2:first-child {
+.projects p {
   margin-bottom: 1em;
-  font-size: 1.8em;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
 }
 
-.blog a {
-  text-decoration: none;
-  color: black;
+.projects h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 
-a:hover {
-  color: blue;
+.paragraph2  {
+  margin-bottom: 2em;
 }
 
 /* footer styles */
-
 footer {
   background-color: hsl(240, 21%, 92%);
   font-size: 1.2em;
@@ -113,9 +111,4 @@ footer nav {
   align-items: center;
   margin-bottom: 2em;
   
-}
-
-footer div {
-  text-align: center;
-  margin-bottom: 12em;
 }
