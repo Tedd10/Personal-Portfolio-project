@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:css": "cleancss src/css/*.css -o dist/css/styles.css",
     "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js"
   },
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/Tedd10/Personal-Portfolio-project#readme",
   "devDependencies": {
     "clean-css-cli": "^5.5.2",
+    "imagemin-cli": "^7.0.0",
     "mkdirp": "^1.0.4",
     "uglify-js": "^3.15.3"
   }
