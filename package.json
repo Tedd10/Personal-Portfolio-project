@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    
+    "build:css": "cleancss src/css/*.css -o dist/css/styles.css",
+    "build:js": ""
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tedd10/Personal-Portfolio-project/issues"
   },
-  "homepage": "https://github.com/Tedd10/Personal-Portfolio-project#readme"
+  "homepage": "https://github.com/Tedd10/Personal-Portfolio-project#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.5.2"
+  }
 }
