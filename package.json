@@ -5,7 +5,9 @@
   "scripts": {
     "minify-images": "imagemin src/images/* --out-dir=dist/images",
     "build:css": "cleancss src/css/*.css -o dist/css/styles.css",
-    "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js"
+    "build:js": "mkdirp dist/js && uglifyjs src/js/*.js -o dist/js/main.js",
+    "copy:html": "cp src/*.html dist",
+    "build:all": "npm run build:css && npm run build:js && npm run copy:html && npm run minify-images"
   },
   "repository": {
     "type": "git",
