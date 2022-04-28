@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+/* dark mode styles */
+
+.button-container {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.switch-button {
+  background-color: gold;
+  border-radius: 5%;
+}
+
+button{
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+.dark{
+  background-color: #222;
+  color: #e6e6e6;
+}
+
 body {
   font-family: Arial, sans-serif;
   position: relative;
@@ -61,7 +87,15 @@ nav a {
 /* description styles */
 
 .description {
-  margin-bottom: 3em;
+  margin-bottom: 3em 0;
+  text-align: center;
+}
+
+.description img {
+  height: 550px;
+  display: block;
+  margin-bottom: 9em;
+  width: 100%;
 }
 
 .description h1 {
@@ -74,12 +108,15 @@ nav a {
   font-family: 'Lato', sans-serif;
 }
 
-
-
 /* modal button styles */
 
 *, *::after, *::before {
   box-sizing: border-box;
+}
+
+.button-container .modal-button {
+  background-color: burlywood;
+  border-radius: 5%;
 }
 
 .modal {
@@ -146,6 +183,13 @@ nav a {
 
 /* skills styles */
 
+.skills img {
+  height: 550px;
+  display: block;
+  margin-bottom: 5em;
+  width: 50%;
+}
+
 .skills {
   margin-bottom: 4em;
 }
@@ -159,7 +203,12 @@ nav a {
   margin-bottom: 0.5em;
 }
 
+a:hover {
+  color: blue;
+}
+
 /* footer styles */
+
 footer {
   background-color: hsl(240, 21%, 92%);
   font-size: 1.2em;
@@ -186,4 +235,36 @@ footer nav {
 footer div {
   text-align: center;
   margin-bottom: 12em;
+}
+
+/* @media only screen and (min-width: 700px) {
+
+  .pic-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pic-card {
+    width: 50%;
+  }
+} */
+
+@media only screen and (min-width: 900px) {
+  
+  .pic-info {
+    text-align: left;
+    width: 48%;
+  }
+
+  .description .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description img {
+    width: 48%;
+    
+  }
 }

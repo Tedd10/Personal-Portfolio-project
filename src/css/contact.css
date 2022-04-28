@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+/* dark mode styles */
+
+.button-container {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.switch-button {
+  background-color: gold;
+  border-radius: 5%;
+}
+
+button{
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+.dark{
+  background-color: #222;
+  color: #e6e6e6;
+}
+
 body {
   font-family: Arial, sans-serif;
   position: relative;
@@ -70,7 +96,7 @@ nav a {
 
 input,
 textarea,
-button {
+.form-container button {
   font-family: 'Lato', sans-serif;
   color: grey;
   border: 1px solid rgb(196, 24, 61);
@@ -86,7 +112,7 @@ button {
   margin-bottom: 0.5em;
 }
 
-button {
+.form-container button {
  background-color: rgb(100, 7, 27); 
  color: white;
 }
@@ -96,15 +122,46 @@ input[type="checkbox"] {
   margin-bottom: 2em;
 }
 
+/* intro statements */
 
-h3 {
+.intro-container h3 {
   font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 350px;
 }
 
-h3 {
+
+
+.form-container h3 {
   color: rgb(196, 24, 61);
   font-size: 1.5em;
   margin-bottom: 2em;
+  font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+  color: blue;
+}
+
+.email-container a {
+  color: black;
+  text-transform: capitalize;
+}
+
+.email-container a:hover {
+  color: blue;
+}
+
+.email-container {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 350px;
+}
+
+.my-email {
+  text-align: center;
+
 }
 
 /* footer styles */

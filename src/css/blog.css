@@ -4,6 +4,32 @@
   padding: 0;
 }
 
+/* dark mode styles */
+
+.button-container {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.switch-button {
+  background-color: gold;
+  border-radius: 5%;
+}
+
+.button-container button{
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+  margin-bottom: 3em;
+  width: 100%;
+}
+.dark{
+  background-color: #222;
+  color: #e6e6e6;
+}
+
 body {
   font-family: Arial, sans-serif;
   position: relative;
@@ -13,7 +39,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  padding: 0 7em;
+  padding: 0 1em;
   
 }
 
@@ -21,7 +47,7 @@ body {
 
 header {
   margin-top: 2em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 header nav a {
@@ -60,33 +86,59 @@ nav a {
 
 /* blog styles */
 
-.projects {
-  margin-bottom: 4em;
-}
-
-.projects h1 {
-  font-size: 2.3em;
-  margin-bottom: 2em;
-}
-
-.projects img {
-  width: 100%;
-  text-align: center;
+.projects  {
   margin-bottom: 3em;
 }
 
-.projects p {
-  margin-bottom: 1em;
-  font-family: 'Lato', sans-serif;
-}
-
 .projects h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 550;
 }
 
-.paragraph2  {
-  margin-bottom: 2em;
+/* .projects hr {
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px double rgb(231, 225, 225);
+  color: grey;
+} */
+
+.blog-card-container {
+  width: 100%;
+  display: table;
+}
+
+.projects p {
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+.projects img {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.projects h3 {
+  color: grey;
+  font-size: small;
+  margin-bottom: 1em;
+}
+
+.projects .blog-card {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.projects button {
+  padding: 0.5em ;
+  background-color: rgb(49, 120, 214);
+  width: 100%;
+  border: rgb(49, 120, 214);
+}
+
+.blog-card button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* footer styles */
@@ -110,5 +162,31 @@ footer nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
-  
+}
+
+footer div {
+  text-align: center;
+  margin-bottom: 12em;
+}
+
+@media only screen and (min-width: 540px) {
+
+  .blog-card {
+    width: 49%;
+  }
+
+  .blog-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (min-width: 820px) {
+  .blog-card {
+    width: 24%;
+  }
+
+ 
 }
