@@ -21,7 +21,7 @@
         <ul>
           <li><a href="../src/index.html">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="../src/Projects.html">Projects</a></li>
+          <!-- <li><a href="../src/Projects.html">Projects</a></li> -->
           <li><a href="../src/Blog.html">Blog</a></li>
           <li><a href="../src/Contact.html">Contact</a></li>
         </ul>
@@ -29,7 +29,9 @@
     </div>
   </header>
 
-  <button data-modal-target="#modal">Open Modal</button>
+  <div class="button-container">
+    <button data-modal-target="#modal" class="modal-button">Open Modal</button>
+  </div>
   <div class="modal" id="modal">
     <div class="modal-header">
       <div class="title">My Favourite soccer Coach</div>
@@ -53,25 +55,29 @@
   <div id="overlay"></div>
 
   <section class="description">
-    <div class="container">
-      <h1>Hey I'm Theo 👋</h1>
-      <p>
-        I'm a Software Developer currently undergoing a Software Development Program in Manitoba Institute for Trades and Technology (MITT) and I'm based in Winnipeg, Canada
-      </p>
-      <p>
-        I was actually studying Computer Science at the University of Alberta in Edmonton but I wanted to really get some practical and hands-on experience, so I took a one-year break to do this program, I was referred to MITT by my mum and I heard it had a one-year Software Development program and how good the program was so I applied for it.
-      </p>
-      <p>
-        Well, to be honest, growing up technology is all I've known as my Dad was a Computer Scientist himself so I really developed an interest in technology at a young age. I really like Artificial Intelligence and the Cyber security field and would like to be involved in something along those lines in the nearest future.
-      </p>
-      <p>
-        I enjoy watching and playing soccer. I like playing video games and listening to music too. Watching anime is my favorite past-time.
-      </p>
+    <div class="container" >
+      <div class="pic-info">
+        <h1>Hey I'm Theo 👋</h1>
+        <p>
+          I'm a Software Developer currently undergoing a Software Development Program in Manitoba Institute for Trades and Technology (MITT) and I'm based in Winnipeg, Canada
+        </p>
+        <p>
+          I was actually studying Computer Science at the University of Alberta in Edmonton but I wanted to really get some practical and hands-on experience, so I took a one-year break to do this program, I was referred to MITT by my mum and I heard it had a one-year Software Development program and how good the program was so I applied for it.
+        </p>
+        <p>
+          Well, to be honest, growing up technology is all I've known as my Dad was a Computer Scientist himself so I really developed an interest in technology at a young age. I really like Artificial Intelligence and the Cyber security field and would like to be involved in something along those lines in the nearest future.
+        </p>
+        <p>
+          I enjoy watching and playing soccer. I like playing video games and listening to music too. Watching anime is my favorite past-time.
+        </p>
+      </div>
+      <img src="../src/images/about me pic2.jpg" alt="a self portrait of me">   
     </div>
   </section>
 
   <section class="skills">
     <div class="container">
+      <img src="../src/images/work-space.jpg" alt="My work space">
       <h1>Tech Skills</h1>
       <ul>
         <li>HTML</li>
@@ -81,6 +87,10 @@
       </ul>
     </div>
   </section>
+
+  <div class="button-container">
+    <button onclick="myFunction()" class="switch-button">Switch mode</button>
+  </div>
 
   <footer>
     <div class="container">
