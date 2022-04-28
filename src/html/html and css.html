@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html and css</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <script src="../js/app.js" defer></script>
+  <link rel="stylesheet" href="../css/blog-posts.css">
+  <script src="https://kit.fontawesome.com/012068b9ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <h2><em>Theodore Akpati</em></h2>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../About.html">About</a></li>
+          <!-- <li><a href="../Projects.html">Projects</a></li> -->
+          <li><a href="../Blog.html">Blogs</a></li>
+          <li><a href="../Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero-section">
+      <h4>April 13</h4>
+      <h1>Html and Css</h1>
+      <img src="../images/blog post 2-html css.jpg" alt="Html and Css graphic">
+      <h2><em>Introduction to HTML and CSS</em></h2>
+    </div>
+    
+    <div class="blog-info">
+      <p>
+        HTML is short for Hyper Text Markup Protocol. ( It’s one of those acronyms people forget the full meaning because the HTML acronym is so popular.) HTML is the code used to structure a webpage and its content; It’s the standard markup language for creating Web pages.
+      </p>
+  
+      <h3>HTML Tags</h3>
+      <p>
+        HTML tags are keywords that define how your web browser will format and display content. HTML tags also help web browsers distinguish between HTML content and simple content.
+      </p>
+      <p>
+        They are usually enclosed in these brackets "< >"
+        Most HTML tags  consist of an opening bracket, content, and a closing bracket
+        For example:
+      </p>
+      <h4>"<tag>"</h4>
+      <p>
+        As you can see we first have the opening bracket “<”
+        Then the content "tag" 
+        followed by the closing bracket  “>”
+      </p>
+      <p>
+        When you use an open tag you usually have to close the tag except in some cases.
+        For Example:
+      </p>
+      <h4>"<tag> ... </tag>"</h4>
+      <p>
+        As you can see we first have the opening tag "<tag>"
+        Then the ending tag "</tag>", 
+        which has a slash before the "tag" content 
+        unlike the opening content. 
+        Don’t worry about what’s between the ellipses it would be explained in the next section
+      </p>
+  
+      <h3>HTML Elements</h3>
+      <p>
+        HTML Elements are what make up an HTML file. These elements are responsible for creating web pages and define content in that webpage. 
+        An HTML element consists of a start tag, some content, and then an end tag
+        Like this:      
+      </p>
+      <h4>"<tag>Hello world</tag>"</h4>
+      <p>
+        As seen in this example we have the starting tag "<tag>"
+        then some content "Hello world" 
+        and finally, the end tag “</tag>”
+      </p>
+  
+      <h3>HTML Attributes</h3>
+      <p>
+        HTML Attributes are special words that provide additional information about elements.
+        They are specified in the start tag and come in name/value pairs like name=” value ”
+        For example:      
+      </p>
+      <h4>"<tag attribute_name=”value”>content</tag>"</h4> 
+      <p>
+        As seen in this example we have the starting tag '“<tag”'
+        Then the attribute name with its value and the closing bracket of the starting tag “>”
+        Some content and then the end tag “</tag>”
+      </p>
+  
+      <h3>Inline Element</h3>
+      <p>
+        Inline Elements are elements that differentiate the part of a given text and provide it with a particular function.
+        The Inline elements don’t start with a new line only takes up as much width as necessary.
+        For example:      
+      </p>
+
+      <div class="image-container1">
+        <img src="../images/blog post 3-html css.jpg" alt="inline element with a hello world graphic">
+      </div>
+      
+      <p>
+        The “Hello world” element is an inline element, and will not start on a new line and only takes up as much width as necessary.
+      </p>
+  
+      <h3>Block Element</h3>
+      <p>
+        Block elements are the elements that structure the main part of a web page, by dividing a page into coherent blocks.
+        Block elements always start with new a line and take up the full width of the webpage available from left to right. Browsers automatically add some space (a margin) before and after the element.
+        An example of a block element is the <p> element which is used to define a paragraph in an HTML document.
+        Here’s how it would look on the webpage.      
+      </p>
+
+      <div class="image-container1">
+        <img src="../images/blog post 4-html css.jpg" alt="block element with a hello world graphic">
+      </div>
+      
+      <p>
+        As seen the <p> element is a block element, and it will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).
+      </p>
+  
+      <h3>CSS Rule</h3>
+      <p>
+        A CSS rule set contains a selector and a declaration block.
+      </p>
+      <h4>"h1{ color: red; font-size: 12px;}"</h4>
+      <p>
+        In the code above the “h1” is the selector
+        The “color” is the property
+        “red” is the value 
+        “font-size” is also a property
+        “12px” is also a value
+        And everything in the curly bracket is the “declaration block”
+      </p>
+  
+      <p>
+        To explain the sections above:
+        Selector: The Selector indicates the HTML element you want to style. For example, the <p> tag is used to define a paragraph in an HTML document as explained in the Block element chapter.
+      </p>
+  
+      <p>
+        Declaration Block: The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations:
+      </p>
+      <h4>1. color: red;</h4>
+      <h4>2. font-size: 12px;</h4>
+  
+      <p>
+        Each declaration contains a property name and value, separated by a colon.
+      </p>
+  
+      <p>
+        Property: A Property is a type of attribute of an HTML element. Some examples are color, border, etc.
+      </p>
+  
+      <p>
+        Value: Values are assigned to CSS properties. In the above example, the value "red" is assigned to the color property.
+      </p>
+    </div>
+    
+
+    <div class="blog-button-container">
+      <div class="side-by-side">
+        <a href="../html/career-plan.html"><button class="blog-button-container1"> Back</button></a>
+        <a href="../html/fifa player.html"><button class="blog-button-container2"> Forward</button></a>
+      </div>
+      <div class="under">
+        <a href="../Blog.html"><button class="blog-button-container3"> Back to the Blog page</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button onclick="myFunction()" class="switch-button">Switch mode</button>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </nav>
+      <div>&copy; Theodore Akpati 2022</div>
+    </div>
+  </footer>
+</body>
+</html>
